@@ -3,5 +3,8 @@ En este repositorio verás una lista de mis proyectos públicos separados por ca
 
 
 PHP7: Laravel 5.x, Symfony 4, WordPress.
+
 JavaScript: TypeScript, jQuery, Angular 7, NodeJS, ExpressJS.
+
 HTML5 & CSS3: Bootstrap.
+
