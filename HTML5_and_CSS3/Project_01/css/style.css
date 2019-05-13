@@ -1,0 +1,97 @@
+*/*Margenes*/
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	font-family: sans-serif, arial, verdana;
+	font-size: 16px;
+}
+
+article
+{
+	border: 1px solid #000;
+	margin-top: 0;
+	padding: 1em; 
+}
+
+aside
+{
+	background-color: #f7f7f7;
+	border: 1px solid #000;
+	float: left;
+	height: auto;
+	margin: 0.5em 0.5em 0.5em 0.7em;
+	padding: 1em;
+	width: 35.3%;
+}
+
+img
+{
+	display:block;
+	height: 150px;
+	margin:auto;
+	padding-top: 1em;
+	width: 300px;
+}
+
+nav
+{
+	background: gray;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+nav ul li
+{
+	display: inline-block;
+}
+
+nav ul li a
+{
+	color: #fff;
+	display: inline-block;
+	padding: 0.5em;
+	text-decoration: none;
+}
+
+nav ul li a:hover
+{
+	color: red;
+}
+
+section
+{
+	background: skyblue;
+	border: 1px solid #000;
+	float: left;
+	height: auto;
+	margin: 0.5em 0.5em 0 0.5em;
+	width: 60%;
+}
+
+p
+{
+	text-align: justify;
+}
+
+footer
+{
+	background-color: steelblue;
+	bottom: 0;
+	border: 1px solid #000;
+	float: left;
+	padding: 1em 0 1em 0;
+	position: fixed;
+	width: 100%;
+}
+
+footer p
+{
+	color: #fff;
+	font-size: 1em;
+	text-align: center;
+}
