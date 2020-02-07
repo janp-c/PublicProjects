@@ -1,0 +1,538 @@
+@charset "UTF-8";
+
+/*
+    Estos son los estilos de la página web.
+    Creado por:     Julián Pizarro.
+    Fecha:          Septiembre 9/2019.
+    Localidad:      Cali, Colombia.
+    GitHub:         @janp-c.
+    GitLab:         @janp-c.
+    WebSite:        janp-c.com
+
+    Fuentes externas de Google:
+        font-family: 'Rajdhani', sans-serif;
+        font-family: 'Play', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #fff;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+a, nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Play', sans-serif;
+    color: #000;
+}
+
+#sobre-mi, #servicios, #mis-trabajos, #por-que-trabajar, #blog, #contacto{
+    margin-top: 30px;
+    padding: 90px 0;
+    padding-bottom: 0;
+}
+
+#sobre-mi a, #blog a, #que-esperas a{
+    background: #3FC650;
+    border-radius: 6px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 14px 24px;
+    text-align: center;
+    width: 125px;
+}
+
+/* Cabecera */
+
+header{
+    background: linear-gradient(rgba(91, 255, 165, 0.4), rgba(193, 255, 133, 0.4)), url('../img/fondo.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-titulo{
+    text-align: center;
+}
+
+.contenedor-titulo a{
+    background: #f00;
+    border-radius: 6px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 14px 24px;
+    width: 140px;
+}
+
+.logo{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-icon{
+    display: none;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+    margin: 15px;
+}
+
+h1{
+    font-size: 60px;
+    margin: 0;
+}
+
+h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.contenedor{
+    margin: auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+.contenedor p{
+    margin: 15px;
+}
+
+#contenedor-titulo-flex{
+    display: flex;
+    justify-content: center;
+    margin: 18vh 0;
+    max-width: 1580px;
+    width: 100%;
+}
+
+/* Sobre Mí */
+
+h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+#sobre-mi .contenedor-sobre-mi{
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#sobre-mi .texto{
+    width: 42%;
+}
+
+#sobre-mi img{
+    height: 70%;
+    width: 100%;
+}
+
+.computadoras, .texto{
+    height: 350px;
+}
+
+/* Servcios */
+
+.contenedor-servicios{
+    color: #fff;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.servicio{
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 34px 30px 38px 30px;
+    position: relative;
+    width: 24%;
+}
+
+.servicio h4{
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+}
+
+.servicio p{
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.contenedor-servicios .violeta{
+    background: linear-gradient(to top, #5055df, #6d68f3);
+    box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);
+}
+
+.contenedor-servicios .celeste{
+    background: linear-gradient(to top, #40a8f9, #5cb8ff);
+    box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);
+}
+
+.ondas{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.icono{
+    float: right;
+    bottom: 30px;
+    margin-bottom: -45px;
+}
+
+/* Mis Trabajos */
+
+button.owl-prev, button.owl-next{
+    font-size: 40px !important;
+}
+
+.owl-carousel{
+    margin-top: 30px;
+}
+
+/* ¿Por Qué Trabajar Conmigo? */
+
+.contenedor-trabajar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#por-que-trabajar .item{
+    text-align: center;
+    width: 28%;
+}
+
+#por-que-trabajar ul li{
+    list-style: none;
+}
+
+#por-que-trabajar ul li:nth-child(2){
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+#por-que-trabajar ul li:nth-child(3){
+    line-height: 20px;
+}
+
+/* Blog */
+
+#blog{
+    background: #f4f5f4;
+    height: auto;
+}
+
+#blog .contenedor-publicaciones{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#blog .publicacion{
+    box-shadow: 8px 10px 5px #000;
+    width: 30%;
+}
+
+#blog img{
+    height: 200px;
+    width: 100%;
+}
+
+#blog .contenido{
+    background: #fff;
+    margin-top: -6px;
+    padding: 20px;
+}
+
+#blog h4{
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+#blog p{
+    color: #111111;
+    line-height: 17px;
+    margin: 10px;
+}
+
+/* Charlemos */
+
+#que-esperas{
+    background: linear-gradient(to bottom, rgba(112,145,164,1) 0%, rgba(149,182,198,1) 100%);
+    margin-top: 40px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#que-esperas h3{
+    color: #fff;
+    font-size: 23px;
+}
+
+/*  Contacto */
+
+#contacto form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+    width: 70%;
+}
+
+input[type="text"], input[type="email"]{
+    border: 0;
+    border-bottom: 1px solid red;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 18px 0;
+    width: 49%;
+}
+
+textarea{
+    border: 0;
+    border-bottom: 1px solid red;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    margin-bottom: 40px;
+    padding: 18px 0;
+    width: 100%;
+}
+
+#contacto input[type="submit"]{
+    background: #f00;
+    border-radius: 6px;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 14px 24px;
+    width: 140px;
+}
+
+.contacto-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.contacto-info img{
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 28px;
+}
+
+/* Pie de Página */
+
+footer{
+    background: #2f2f2f;
+    margin-top: 40px;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer img{
+    margin: 0 40px;
+    transform: rotate(0);
+    transition: 0.4s;
+}
+
+footer img:hover{
+    transform: rotate(360deg);
+    transition: 0.4s;
+}
+
+footer p{
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* WhatsApp Estatico */
+
+#whatsapp{
+    position: fixed;
+    right: 1%;
+    top: 80%;
+}
+
+/* Responsive Web Design */
+
+@media (max-width: 800px){
+    header nav{
+        background: rgb(190, 247, 195);
+        display: none;
+        height: 305px;
+        left: 0;
+        margin-top: -27px;
+        position: absolute;
+        top: 83px;
+        width: 100%;
+    }
+
+    header nav ul{
+        flex-direction: column;
+    }
+
+    header nav ul li{
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    header nav ul li a{
+        color: #000;
+    }
+    
+    h1{
+        font-size: 44px;
+    }
+
+    h2{
+        font-size: 19px;
+    }
+
+    h3{
+        font-size: 43px;
+    }
+
+    .menu-icon{
+        display: block;
+        float: right;
+        height: 30px;
+        margin-top: 14px;
+        width: 30px;
+    }
+
+    #sobre-mi .contenedor-sobre-mi{
+        flex-direction: column;
+    }
+
+    #sobre-mi img, #sobre-mi .texto{
+        width: 100%;
+    }
+
+    .contenedor-servicios{
+        flex-direction: column;
+    }
+
+    .servicio{
+        padding: 34px 30px 80px 30px;
+        width: 82%;
+    }
+
+    .icono{
+        margin-top: 20px;
+    }
+
+    .contenedor-trabajar{
+        flex-direction: column;
+    }
+
+    #por-que-trabajar .item{
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .item ul{
+        padding: 0;
+    }
+
+    #blog .contenedor-publicaciones{
+        flex-direction: column;
+    }
+
+    #blog .publicacion{
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    #contacto form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input[type="text"], input[type="email"]{
+        width: 100%;
+    }
+
+    .contacto-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer img{
+        margin: 0 20px;
+    }
+
+    footer p{
+        margin: 20px 40px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px){
+    header{
+        height: 70vh;
+    }
+
+    .servicio{
+        margin: auto;
+        margin-bottom: 45px;
+        padding: 30px 30px 30px 30px;
+        width: 80%;
+    }
+
+    .icono{
+        margin-top: -60px;
+        margin-bottom: -20px;
+    }
+
+    #blog .publicacion{
+        margin: auto;
+        margin-bottom: 40px;
+        width: 80%;
+    }
+}

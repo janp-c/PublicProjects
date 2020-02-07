@@ -1,0 +1,663 @@
+@charset 'UTF-8';
+/*
+    Fuentes externas por Google:
+
+    font-family: 'Teko', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+*/
+body{
+    margin: 0;
+    font-family: 'Orbitron', cursive;
+    padding: 0;
+}
+
+header .logo{
+    color: #000;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.contenedor{
+    margin: auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+.menu{
+    background: #fff;
+    box-shadow: 1px 1px 8px #ccc;
+    display: block;
+    padding: 9px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu .contenedor{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* INTRO */
+
+#intro{
+    background: url(../img/intro.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    font-family: 'Teko', sans-serif;
+    padding-top: 250px;
+}
+
+#intro .izquierda{
+    background: rgba(255, 255, 255, 0.85);
+    padding: 65px 75px;
+    width: 66%;
+}
+
+#intro .izquierda p{
+    font-size: 14px;
+    letter-spacing: 18px;
+}
+
+#intro h1{
+    font-size: 66px;
+    font-weight: 100;
+    letter-spacing: 19px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+#intro .derecha{
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 80%, #fff 80%);
+    color: #fff;
+    height: 503px;
+    width: 57%;
+}
+
+#intro .contenido{
+    background: red;
+    padding: 1px 50px 40px 50px;
+}
+
+#intro a, #programs a, #testimonials a{
+    border-bottom: 2px solid red;
+    color: #000;
+    font-size: 28px;
+    letter-spacing: 7px;
+    padding: 13px 18px 13px 18px;
+    padding-bottom: 13px;
+    text-decoration: none;
+}
+
+#intro .derecha a{
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+}
+
+#intro .derecha p{
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+/* PROGRAMS */
+
+#programs{
+    font-family: 'Teko', sans-serif;
+    padding-top: 90px;
+    text-align: center;
+}
+
+.rojo{
+    color: red;
+}
+
+#programs .cero{
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+#programs .ini{
+    font-size: 15px;
+    letter-spacing: 18px;
+}
+
+#programs h2{
+    font-size: 63px;
+    font-weight: 100;
+    letter-spacing: 16px;
+    margin: 0;
+    margin-bottom: 16px;
+    margin-top: 30px;
+}
+
+#programs p{
+    color: #666;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    line-height: 30px;
+    margin: auto;
+    width: 73%;
+}
+
+#programs a{
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.contenedor-programs{
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    width: 88%;
+}
+
+#programs #uno{
+    background: #2a2e3f;
+    color: #fff;
+}
+
+#uno p, #dos p, #tres p{
+    color: #fff;
+    text-align: left;
+    width: 100%;
+}
+
+h3{
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin: 0;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.programs{
+    box-shadow: 50px 70px 120px -42px rgba(0, 0, 0, .3);
+    padding: 45px 45px;
+}
+
+#dos{
+    background: red;
+    color: #fff;
+    position: relative;
+    top: 120px;
+}
+
+#tres p{
+    color: black;
+}
+
+/* Vídeo */
+
+#video{
+    padding-top: 90px;
+    text-align: center;
+}
+
+#video .contenedor{
+    position: relative;
+}
+
+#video .botones{
+    left: 46%;
+    position: absolute;
+    top: 35%;
+}
+
+#video i{
+    color: #fff;
+    font-size: 125px;
+}
+
+#video button{
+    background: none;
+    border: 0;
+}
+
+/* JOIN */
+
+#join{
+    display: flex;
+    padding-top: 250px;
+}
+
+#join .izquierda{
+    background: #fa2a20;
+    height: 340px;
+    margin-left: 100px;
+    position: relative;
+    width: 49%;
+}
+
+#join img{
+    width: 47%;
+}
+
+#join .derecha{
+    background: url(../img/join-back.jpg);
+    background-size: cover;
+    position: relative;
+    width: 53%;
+}
+
+#join .izquierda a{
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Teko', sans-serif;
+    left: 32%;
+    letter-spacing: 5px;
+    padding: 15px 24px;
+    position: absolute;
+    text-decoration: none;
+    top: 8%
+}
+
+#join #uno{
+    left: 56%;
+    position: absolute;
+    top: 24%;
+    width: 44%;
+    z-index: 0;/*1*/
+}
+
+#join #dos{
+    position: absolute;
+    top: -44%;
+}
+
+#join #tres{
+    left: 47%;
+    position: absolute;
+    top: 24%;
+    width: 44%;
+}
+
+/* TESTIMONIALS */
+
+#testimonials{
+    padding-top: 90px;
+    text-align: center;
+}
+
+span.comillas{
+    color: red;
+    font-size: 120px;
+}
+
+#testimonials a{
+    font-family: 'Teko', sans-serif;
+}
+
+#testimonials h2{
+    font-family: 'Teko', sans-serif;
+    font-size: 63px;
+    font-weight: 100;
+    letter-spacing: 16px;
+    margin: 0;
+    margin-bottom: 36px;
+}
+
+.contenedor-testimonials{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.testimonial{
+    margin-right: 40px;
+    width: 40%;
+}
+
+.testimonial .contenido{
+    display: flex;
+}
+
+.foto{
+    background: url(../img/testimonial.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    height: 85px;
+    margin-top: 22px;
+    width: 215px;
+}
+
+.testimonial p{
+    color: #666;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: 24px;
+    text-align: left;
+}
+
+p.nombre{
+    font-weight: bold;
+    margin-left: 114px;
+}
+
+/* CONTACT */
+
+#contact{
+    background: url(../img/contacto.jpg);
+    color: #fff;
+    display: flex;
+}
+
+#contact .izquierda{
+    padding: 100px;
+    width: 43%;
+}
+
+#contact .izquierda p{
+    font-size: 14px;
+    letter-spacing: 18px;
+}
+
+#contact h2{
+    font-family: 'Teko', sans-serif;
+    font-size: 66px;
+    font-weight: 100;
+    letter-spacing: 19px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+#contact form input[type='text'], #contact form input[type='email'], #contact form textarea{
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    color: red;
+    font-family: 'Teko', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 34px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+#contact form input[type='submit']{
+    background: #fff;
+    border: 1px solid #fff;
+    color: #000;
+    float: right;
+    font-family: 'Teko', sans-serif;
+    font-size: 17px;
+    letter-spacing: 5px;
+    padding: 20px 30px;
+}
+
+#contact .derecha{
+    align-self: flex-end;
+    background: #f7291f;
+    padding: 5px 50px 50px 50px;
+    width: 36%;
+}
+
+.gym-hours{
+    box-shadow: 0px 70px 120px -42px rgba(0, 0, 0, .3);
+    margin-bottom: 32px;
+    padding: 30px;
+}
+
+.gym-hours ul{
+    padding: 0;
+}
+
+.gym-hours ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.pass{
+    background: #fff;
+    color: black;
+    padding: 30px;
+}
+
+.pass a{
+    border: 1px solid red;
+    color: black;
+    display: inline-block;
+    font-size: 17px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    padding: 22px 30px;
+    text-decoration: none;
+}
+
+/* Ocultar Icono de Menú */
+
+.menu-icon{
+    display: none;
+}
+
+/* RESPOSIVE DESIGN */
+
+@media screen and (max-width: 480px){
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        right: 65px;
+    }
+
+    nav{
+        background: #000;
+        display: none;
+        left: 0;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
+
+    nav ul li{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    nav ul li a{
+        color: #fff;
+    }
+
+    #intro .izquierda p{
+        letter-spacing: 8px;
+    }
+
+    #intro h1{
+        font-size: 34px;
+        letter-spacing: 10px;
+    }
+
+    #intro a, #programs a, #testimonials a{
+        font-size: 13px;
+        letter-spacing: 4px;
+    }
+
+    #intro .izquierda{
+        height: 258px;
+        padding: 24px 26px;
+        width: 100%;
+    }
+
+    #intro{
+        flex-direction: column;
+    }
+
+    #intro .derecha{
+        height: 200px;
+        width: 100%;
+    }
+
+    #programs .cero{
+        font-size: 57px;
+    }
+
+    #programs .ini{
+        letter-spacing: 12px;
+    }
+
+    #programs h2{
+        font-size: 34px;
+    }
+
+    #programs p{
+        width: 100%;
+    }
+
+    .contenedor-programs{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    #dos{
+        position: relative;
+        top: 35px;
+    }
+
+    #tres{
+        margin-top: 50px;
+    }
+
+    video{
+        height: 240px;
+        width: 342px;
+    }
+
+    #mp4{
+        width: 342px;
+    }
+
+    #video i{
+        font-size: 62px;
+    }
+    
+    #video .botones{
+        left: 40%;
+        top: 42%;
+    }
+
+    #video{
+        padding: 0;
+    }
+
+    #join{
+        flex-direction: column;
+        padding-top: 90px;
+    }
+
+    #join .izquierda{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #join #uno{
+        left: 30%;
+        top: 34%;
+    }
+
+    #join .derecha{
+        width: 100%;
+    }
+
+    #join #dos{
+        top: 1px;
+    }
+
+    #join #tres{
+        left: 47%;
+        top: 82px;
+        width: 53%;
+    }
+
+    #join img{
+        width: 63%;
+    }
+
+    #testimonials{
+        padding-top: 390px;
+    }
+
+    #testimonials h2{
+        font-size: 24px;
+    }
+
+    .contenedor-testimonials{
+        flex-direction: column;
+    }
+
+    .testimonial{
+        width: 100%;
+    }
+
+    .testimonial p{
+        margin-right: 20px;
+    }
+
+    .foto{
+        height: 59px;
+        margin-left: 10px;
+    }
+
+    p.nombre{
+        margin-left: 88px;
+    }
+
+    #contact{
+        flex-direction: column;
+    }
+
+    #contact .izquierda{
+        padding: 26px;
+        width: 88%;
+    }
+
+    #contact .izquierda p{
+        font-size: 10px;
+        letter-spacing: 9px;
+    }
+
+    #contact h2{
+        font-size: 35px;
+    }
+
+    #contact form input[type='text'], #contact form input[type='email'], #contact form textarea{
+        width: 100%;
+    }
+
+    #contact .derecha{
+        padding: 5px 15px 50px 17px;
+        width: 93%;
+    }
+
+    .gym-hours{
+        padding: 16px;
+    }
+
+    .pass{
+        padding: 13px;
+    }
+}
