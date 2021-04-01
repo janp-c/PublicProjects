@@ -1,0 +1,512 @@
+@charset 'UTF-8';
+/*
+    Fuentes externas por Google:
+
+    font-family: 'Lemonada', cursive;
+    font-family: 'Lobster', cursive;
+*/
+
+body{
+    margin: 0;
+    font-family: 'Lemonada', cursive;
+    padding: 0;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contenedor{
+    max-width: 1280px;
+    margin: auto;
+    width: 90%;
+}
+
+.menu{
+    background: #fff;
+    padding: 9px 20px;
+}
+
+.menu .contenedor{
+    align-items: center;
+    display: flex;
+    font-family: 'Lobster', cursive;
+    justify-content: space-between;
+}
+
+header .logo{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: black;
+}
+
+/* Sección Intro */
+
+#intro{
+    background: url(../img/back.jpg);
+    background-position: 57% 48%;
+    background-size: cover;
+    height: 80vh;
+    margin-top: -60px;
+    text-align: center;
+}
+
+#intro h1{
+    color: #fff;
+    font-family: 'Lobster', cursive;
+    font-size: 72px;
+    font-weight: normal;
+    padding: 60px;
+}
+
+#intro p{
+    color: #bfbfbf;
+    font-size: 18px;
+    line-height: 36px;
+    margin: auto;
+    width: 60%;
+}
+
+#intro .menu{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 9px;
+}
+
+#intro .reservation{
+    background: #c39d63;
+    color: #fff;
+    padding: 9px;
+}
+
+#intro .botones{
+    margin-top: 50px;
+}
+
+#intro .botones a{
+    margin-right: 20px;
+    padding: 9px 23px;
+}
+
+/* Sección  Our Story */
+
+#our-story{
+    padding: 90px 0;
+}
+
+#our-story .contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.our-story{
+    color: #bfbfbf;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+hr{
+    border-color: #c29d63;
+    float: left;
+    width: 117px;
+}
+
+#our-story h2, #testimonials h2{
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+#our-story .texto, #testimonial .texto{
+    color: #939393;
+    font-size: 14px;
+    line-height: 26px;
+    width: 88%;
+}
+
+#our-story .izquierda{
+    width: 45%;
+}
+
+/* Menús de Comida */
+
+#menu{
+    background: #1f1f1f;
+    margin-bottom: 100px;
+}
+
+#menu .foto{
+    background: url(../img/cangrejo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 285px;
+    width: 300px;
+}
+
+#menu .linea1 div, #menu .linea2 div{
+    display: inline-block;
+    width: 33.057%;
+}
+
+#menu .linea1, #menu .linea2{
+    background: white;
+    text-align: center;
+}
+
+#menu li{
+    list-style: none;
+}
+
+#menu .precio{
+    color: #c29d62;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#menu .titulo{
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+#menu .parrafo{
+    color: #939393;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+#menu .hongos{
+    background: url(../img/hongos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: -14px;
+    position: relative;
+    top: -11px;
+}
+
+#menu .pez{
+    background: url(../img/pez.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: -14px;
+    position: relative;
+    top: -11px;
+}
+
+#menu .contenedor{
+    max-width: 1245px;
+}
+
+#menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+#menu .texto{
+    position: relative;
+    top: -30px;
+}
+
+#menu .linea2{
+    height: 274.5px;
+}
+
+/* TESTIMONIALS */
+
+#testimonials{
+    background: #f7f7f7;
+    padding: 90px 0;
+    text-align: center;
+}
+
+#testimonials .titulo{
+    color: #bfbfbf;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#testimonials hr{
+    float: none;
+    font-weight: 700;
+    width: 40px;
+}
+
+.contenedor-testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testimonial{
+    text-align: left;
+    width: 20%;
+}
+
+.testimonial img{
+    width: 55%;
+}
+
+#testimonials .contenedor{
+    max-width: 1150px;
+}
+
+#testimonials .nombre{
+    font-weight: bold;
+}
+
+/* CONTACT */
+
+#contact{
+    background: url(../img/restaurant.jpg);
+    color: #fff;
+    padding: 90px 0;
+    text-align: center;
+}
+
+#contact .contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+#contact .izquierda, #contact .derecha{
+    background: #1f1f1f;
+    padding: 77px 29px;
+    width: 35%;
+}
+
+#contact .izquierda{
+    margin-right: 40px;
+}
+
+#contact ul{
+    border-bottom: 2px solid #c29d62;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+ul #tercero{
+    border-bottom: 0;
+}
+
+#contact ul li{
+    font-size: 15px;
+    list-style: none;
+}
+
+#contact h2{
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+#contact ul li:nth-child(1){
+    font-weight: bold;
+}
+
+#contact a{
+    background: #c29d63;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    padding: 9px 12px;
+}
+
+#contact .derecha{
+    padding: 30px 0;
+    width: 40%;
+}
+
+#contact h3{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    font-weight: 100;
+    margin: 0;
+}
+
+#contact .derecha p{
+    margin: auto;
+    opacity: 0.8;
+    width: 70%;
+}
+
+#contact h3.news{
+    margin-top: 67px;
+}
+
+#contact form{
+    margin-top: 25px;
+}
+
+input[type="text"], input[type="email"]{
+    background: #111;
+    border: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 72%;
+}
+
+::placeholder, ::-ms-input-placeholder{
+    color: #cdcdcd;
+}
+
+input[type="submit"]{
+    background: #c29d63;
+    border: 0;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    padding: 11px 0;
+    width: 78%;
+}
+
+header img.menu-icon {
+    display: none;
+}
+
+/* Resposive Mobile */
+
+@media screen and (max-width: 800px){
+    #intro{
+        height: 60vh;
+        margin-top: -58px;
+    }
+
+    header img.menu-icon {
+        display: block;
+    }
+
+    nav{
+        background: #000;
+        display: none;
+        left: 0;
+        position: absolute;
+        top: 83px;
+        width: 100%;
+    }
+
+    nav ul li{
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    nav ul li a{
+        color: #fff;
+    }
+
+    header .logo{
+        font-size: 20px;
+        padding-bottom: 23px;
+    }
+
+    #intro h1{
+        font-size: 37px;
+        padding: 45px;
+    }
+
+    #intro p{
+        font-size: 13px;
+        line-height: 24px;
+        margin: auto;
+        width: 98%;
+    }
+
+    img.menu-icon{
+        padding-bottom: 23px;
+    }
+
+    #our-story .contenedor{
+        flex-direction: column;
+    }
+
+    #our-story .izquierda, #our-story .derecha img{
+        width: 100%;
+    }
+
+    #menu .linea1 div, #menu .linea2 div{
+        display: block;
+        width: 100%;
+    }
+
+    #menu .parrafo {
+        line-height: 24px;
+        margin-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    #menu .texto {
+        top: -7px;
+    }
+
+    #menu .precio {
+        font-size: 24px;
+        margin-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    .linea2 .hongos, .linea2 .pez{
+        width: 100% !important;
+    }
+
+    #menu .hongos{
+        left: 0px;
+        top: 3px;
+    }
+
+    #menu{
+        height: 1658px;
+    }
+
+    #menu #ultimo{
+        top: 3px;
+        width: 100% !important;
+    }
+
+    #menu .pez{
+        right: 0px;
+        top: 14px;
+    }
+
+    #menu .linea2{
+        height: 845px;
+    }
+
+    #testimonials{
+        padding: 0px 0px;
+    }
+
+    .contenedor-testimonials{
+        flex-direction: column;
+    }
+
+    .testimonial{
+        width: 100%;
+    }
+
+    #contact .contenedor{
+        flex-direction: column;
+    }
+
+    #contact .izquierda, #contact .derecha {
+        width: 84%;
+    }
+
+    #contact .derecha{
+        margin-top: 50px;
+        width: 100%;
+    }
+}

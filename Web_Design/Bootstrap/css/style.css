@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+/* Starter CSS for the WebSite */
+.col-md-4, .col-md-3, .col-md-1
+{
+	border: 1px solid #000;
+	padding: 20px;
+}
+
+.fila-uno, .caja
+{
+	background: #ddd;
+	height: 500px;
+}
+
+.fila-dos
+{
+	background: lime;
+	height: 500px;
+}
+
+.fila-tres
+{
+	background: skyblue;
+	height: 500px;
+}
